@@ -1,8 +1,8 @@
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './bundle.js'
   },
   resolve: {
     root: __dirname,
@@ -11,7 +11,6 @@ module.exports = {
       './src/components'
     ],
     alias: {
-      styles: 'styles/main.css'
     },
     extensions: ['', '.js', '.jsx']
   },
