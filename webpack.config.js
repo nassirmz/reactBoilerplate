@@ -11,7 +11,7 @@ module.exports = {
       './src/components'
     ],
     alias: {
-      
+      styles: 'styles/main.css'
     },
     extensions: ['', '.js', '.jsx']
   },
