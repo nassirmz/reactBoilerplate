@@ -2,7 +2,7 @@ module.exports = {
   entry: './src/app.jsx',
   output: {
     path: __dirname,
-    filename: './bundle.js'
+    filename: './public/bundle.js'
   },
   resolve: {
     root: __dirname,
@@ -23,5 +23,9 @@ module.exports = {
         test: /\.css?$/
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './'
   }
 };
